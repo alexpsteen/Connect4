@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    --scale: calc(100px);
+    --rheight: calc(87px);
+}
+
+h1 {
+    font-size: 7vw;
+    text-align: center;
+    font-family: Century Gothic;
+}
+
+h2 {
+    font-size: 4vw;
+    text-align: center;
+    font-family: Century Gothic;
+}
+
+#reset {
+    margin: auto;
+    width: 6.5%;
+}
+
+#options {
+    display: none;
+}
+
+#field {
+    width: 700px;
+    height: calc(var(--rheight)*7);
+    margin: auto;
+    display: none;
+}
+
+#button_holder {
+    width: 383px;
+    margin: auto;
+}
+
+.btn {
+    margin-left: 52px;
+    margin-top: 30%;
+}
+
+.board {
+    width: 700px;
+    position: absolute;
+    user-select: none;
+}
+
+#board_bottom {
+    margin-top: 260
+}
+
+.board_column {
+    width: 100px;
+    position: absolute;
+}
+
+.circle_r {
+    margin-left: 8px;
+    margin-top: 3px;
+	width: 84px;
+	max-height: 84px;
+	background: #E00;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.circle_b {
+    margin-left: 8px;
+    margin-top: 3px;
+	width: 84px;
+	max-height: 84px;
+	background: #000;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.winner {
+    font-size: 10vw;
+    color: #0C0;
+}
+
+.tie {
+    font-size: 9vw;
+    color: #44F;
+}
+
+/*Board Layout*/
+
+#c1 {margin-left: calc(var(--scale) * 0);}
+#c2 {margin-left: calc(var(--scale) * 1);}
+#c3 {margin-left: calc(var(--scale) * 2);}
+#c4 {margin-left: calc(var(--scale) * 3);}
+#c5 {margin-left: calc(var(--scale) * 4);}
+#c6 {margin-left: calc(var(--scale) * 5);}
+#c7 {margin-left: calc(var(--scale) * 6);}
+
+.board_column:hover {border: solid 1px;}
+
+#r_1-1 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 0);}
+#r_1-2 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 1);}
+#r_1-3 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 2);}
+#r_1-4 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 3);}
+#r_1-5 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 4);}
+#r_1-6 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 5);}
+#r_1-7 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 6);}
+
+#r_2-1 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 0);}
+#r_2-2 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 1);}
+#r_2-3 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 2);}
+#r_2-4 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 3);}
+#r_2-5 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 4);}
+#r_2-6 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 5);}
+#r_2-7 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 6);}
+
+#r_3-1 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 0);}
+#r_3-2 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 1);}
+#r_3-3 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 2);}
+#r_3-4 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 3);}
+#r_3-5 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 4);}
+#r_3-6 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 5);}
+#r_3-7 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 6);}
+
+#r_4-1 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 0);}
+#r_4-2 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 1);}
+#r_4-3 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 2);}
+#r_4-4 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 3);}
+#r_4-5 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 4);}
+#r_4-6 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 5);}
+#r_4-7 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 6);}
+
+#r_5-1 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 0);}
+#r_5-2 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 1);}
+#r_5-3 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 2);}
+#r_5-4 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 3);}
+#r_5-5 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 4);}
+#r_5-6 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 5);}
+#r_5-7 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 6);}
+
+#r_6-1 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 0);}
+#r_6-2 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 1);}
+#r_6-3 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 2);}
+#r_6-4 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 3);}
+#r_6-5 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 4);}
+#r_6-6 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 5);}
+#r_6-7 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 6);}
+
+#r_7-1 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 0);}
+#r_7-2 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 1);}
+#r_7-3 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 2);}
+#r_7-4 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 3);}
+#r_7-5 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 4);}
+#r_7-6 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 5);}
+#r_7-7 {height: var(--rheight); top: calc(var(--scale) * 3 / 4 * 6);}
